@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Start Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="recursos/estilos.css" />
+    <script type="text/javascript" src="recursos/Funciones.js"></script>
+  </head>
+  <body>
+    <form
+      name="form1"
+      action="ManejoFormularios-1.0/Servlts"
+      method="post"
+      onsubmit="return validarForm(this)"
+    >
+      <input type="hidden" name="oculto" value="valoroculto" />
+      <table width="200" id="enafis-columna">
+        <caption>
+          Formulario Registro de Datos
+        </caption>
+        <tr>
+          <td class="columna">Usuario : (*)</td>
+          <td>
+            <input
+              class="default"
+              type="text"
+              name="usuario"
+              value="Escribir Usuario"
+              onfocus="this.select()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="columna">Password: (*)</td>
+          <td>
+            <input
+              class="default"
+              type="password"
+              name="pass"
+              onfocus="this.select()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="columna">Tecnolgias de Internet: (*)</td>
+          <td>
+            Java
+            <input type="checkbox" name="tecno" value="java" />
+            &nbsp;&nbsp;&nbsp; .Net
+            <input type="checkbox" name="tecno" value=".net" />
+            &nbsp;&nbsp;&nbsp; PHP
+            <input type="checkbox" name="tecno" value="php" />
+          </td>
+        </tr>
+        <tr>
+          <td class="columna">Genero: (*)</td>
+          <td>
+            Hombre
+            <input type="radio" name="genero" value="hombre" />
+            &nbsp;&nbsp;&nbsp; Mujer
+            <input type="radio" name="genero" value="mujer" />
+          </td>
+        </tr>
+        <tr>
+          <td class="columna">Ocupacion: (*)</td>
+          <td>
+            <select name="ocupacion" class="default">
+              <option value="">Seleccionar</option>
+              <option value="1">Profesor</option>
+              <option value="2">Ingeniero</option>
+              <option value="3">Jubilado</option>
+              <option value="4">Otro</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="columna">Musica Fav:</td>
+          <td>
+            <select name="musica" multiple class="default">
+              <option value="rock">Rock</option>
+              <option value="pop">Pop</option>
+              <option value="salsa">Salsa</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="columna">Comentarios:</td>
+          <td>
+            <textarea
+              name="comentarios"
+              cols="30"
+              rows="2"
+              class="default"
+              onfocus="this.select()"
+            >
+                        escribir un texto
+                    </textarea
+            >
+          </td>
+        </tr>
+        <tr style="text-align: center">
+          <td>
+            <input type="reset" value="limpiar" class="default" />
+          </td>
+          <td>
+            <input type="submit" value="Enviar" class="default" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
